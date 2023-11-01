@@ -1,0 +1,64 @@
+---
+title: "Xuer Liu's Resume"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+# EDUCATION
+
+**Columbia University**, Mailman School of Public Health
+
+*M.S. in Environmental Health Data Science*
+
+- Selected Courses: Data Science, Biostatistics Method, Environment Health Science
+
+**University of Toronto**
+
+*Bachelor of Statistics and Economics*
+
+- Selected Courses: Time Series Analysis, Data Analysis, Design
+and Analysis of Experiments, Calculus Science
+
+# DATA PROJECT SELECTION
+
+**COVID-19 Data Analysis with R programming**
+
+- Cleaned the raw dataset retrieved from Johns Hopkins University and performed descriptive analysis on confirmed cases
+and deaths with different gender, age group, geographical location, etc. in Canada
+- Conducted predictive analytics based on time series analysis to uncover the trends of newly confirmed cases with a focus
+on people who have received vaccines and people who have not, visualized analysis outcome in various types
+
+**Data Analysis on Factors That Influence the CO2 Emission**
+
+- Anatomized amount of CO2 emission from cars by implementing a linear regression model and ANOVA method using R
+- Utilized paired two sample t-test to determine whether the fuel consumption of a car in the city is significantly higher than on the highway, composed an analytical report discussing assessing climate change through environmental data
+
+**US Chicken Price Prediction by SARIMA Model**
+
+- Fitted a SARIMA (seasonal autoregressive integrated moving average) model to the monthly price of a pound of chicken from August 2001 to July 2016 to predict the future price of the chicken
+
+# EXPERIENCE
+
+**Amazon Inc.**
+
+*Freelance Amazon Seller*
+
+- Sell household products on Amazon, also take orders for tailored products, products are from an outsourced manufacturer 
+- Apply a tailored widget to analyze sales data, customer preference and trends of popular products
+
+**University of Toronto Chinese Undergraduate Association**
+
+*Event Planner*
+
+- Managed three WeChat groups for newly admitted freshmen from China and offered useful school resources and orientation programs to help them get settled and adapted to the life in University of Toronto community
+- Took charge in the launch of 2021 Chinese Student Orientation in Shanghai and 2022 Chinese New Year Gala
+
+# SKILLS
+- Experienced in R, Python, Stata, SAS, Microsoft Office Suite (familiar with Excel Pivot Table and VBA)
+
+# CONACT INFORMATION
+- Mobile: (+1) (929)-255-7532
+- Github: https://github.com/XuerLiu5
+- Email: xl3371@cumc.columbia.edu
