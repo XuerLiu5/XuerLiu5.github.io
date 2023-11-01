@@ -1,0 +1,25 @@
+---
+title: "Welcome to Xuer's Website"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cerulean
+---
+
+# This is Xuer's website
+
+My name is Xuer Liu, I am a first-year MS Environmental Health Data Science student at Columbia University. This is my personal website.
+
+# Informations
+
+* A brief introductory landing page
+* My [resume](resume.html) page
+* Links in the site navigation for my [GitHub](https://github.com/XuerLiu5) account
+
+# Flexdashboard
+
+* [Dashboard](dashboard.html) contains three distinct plots to present NYC restaurant inspection results
+
+# My Cat
+![](images/cat1.jpg)
