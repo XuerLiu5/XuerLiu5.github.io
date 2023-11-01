@@ -22,4 +22,5 @@ My name is Xuer Liu, I am a first-year MS Environmental Health Data Science stud
 * [Dashboard](dashboard.html) contains three distinct plots to present NYC restaurant inspection results
 
 # My Cat
+
 ![](images/cat1.jpg)
