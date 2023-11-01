@@ -1,0 +1,71 @@
+---
+title: "Flexdashboard: NYC Restaurant Inspection Results"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(plotly)
+library(p8105.datasets)
+```
+
+```{r}
+data("rest_inspec")
+
+rest_inspec = rest_inspec %>%
+  rename(Borough = boro) %>%
+  select(Borough, cuisine_description, score, grade) %>%
+  drop_na(score) %>%
+  drop_na(grade) %>%
+  filter(Borough != 'Missing')
+```
+
+Column {data-width=450}
+-----------------------------------------------------------------------
+
+### Bar Plot of Number of Restaurant in Each Borough
+
+```{r}
+rest_inspec %>%
+  group_by(Borough) %>%
+  summarise(number_of_restaurant = length(Borough)) %>%
+  mutate(Borough = fct_reorder(Borough, number_of_restaurant)) %>%
+  plot_ly(x = ~Borough,
+          y = ~number_of_restaurant,
+          color = ~Borough,
+          type = "bar", 
+          colors = "viridis")
+```
+
+Column {data-width=550}
+-----------------------------------------------------------------------
+
+### Boxplot of Score in Each Borough
+
+```{r, message=FALSE}
+rest_inspec %>% 
+  mutate(Borough = fct_reorder(Borough, score)) %>%
+  plot_ly(y = ~score, 
+          color = ~Borough, 
+          type = "box",
+          colors = "viridis")
+```
+
+
+### Pie Plot: Percentage of Different Types of Restaurant in Manhattan
+
+```{r}
+rest_inspec %>%
+  filter(Borough == "MANHATTAN") %>%
+  group_by(cuisine_description) %>%
+  summarise(number_of_restaurant = n()) %>%
+  plot_ly(labels = ~cuisine_description,
+          values = ~number_of_restaurant,
+          type = "pie",
+          textinfo = "label+percent",
+          insidetextorientation = "radial")
+```
