@@ -22,4 +22,7 @@ My name is Xuer Liu, I am a first-year MS Environmental Health Data Science stud
 
 # My Cat
 
-![](images/cat1.jpg)
+This is Tiger:
+
+<img src="cat1.jpg" style="width:40%">
+
